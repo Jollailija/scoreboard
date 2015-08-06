@@ -6,7 +6,7 @@ Builds available at OpenRepos: https://openrepos.net/content/jollailija/scoreboa
 
 Features  
 -Simple UI  
--Keep track of both scores and rounds  
+-Keep track of both scores and won rounds  
 -Cover actions 
 -Help page  
 -Landskape support  
@@ -14,5 +14,5 @@ Features
 -Cool icon by Moth  
 
 Planned features  
--Automatic rounds based on sport  
+-Automatic round counting based on sport  
 -Support for many languages
