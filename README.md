@@ -7,7 +7,8 @@ Builds available at OpenRepos: https://openrepos.net/content/jollailija/scoreboa
 Features  
 -Simple UI  
 -Keep track of both scores and rounds  
--Cover actions  
+-Cover actions 
+-Help page  
 -Landskape support  
 -Automatic save  
 -Cool icon by Moth  
