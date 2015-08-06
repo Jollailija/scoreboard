@@ -9,10 +9,11 @@ Features
 -Keep track of both scores and won rounds  
 -Cover actions 
 -Help page  
--Landskape support  
+-Landscape support  
 -Automatic save  
 -Cool icon by Moth  
 
 Planned features  
 -Automatic round counting based on sport  
--Support for many languages
+-Support for many languages  
+-Tablet support
