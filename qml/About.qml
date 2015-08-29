@@ -50,7 +50,7 @@ Page {
                 id: version
                 anchors.top: header.bottom
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: "Version " + "0.0.1" + "-" + "1" //I don't know how to automate this just yet...
+                text: "Version " + "0.1.0" + "-" + "1" //I don't know how to automate this just yet...
                 onClicked: Qt.openUrlExternally("http://pastebin.com/ucc8a4nA")
             }
             TextArea {
@@ -61,7 +61,7 @@ Page {
                     right: parent.right
                 }
                 readOnly: true
-                text: qsTr("A simple scoreboard app for Sailfish OS. Made by jollailija. Icon by Moth")
+                text: qsTr("A simple scoreboard app for Sailfish OS. Made by jollailija. Icon by Moth.")
                 font.pixelSize: Theme.fontSizeMedium
                 horizontalAlignment: textAlignment
             }

@@ -4,4 +4,4 @@ X-Nemo-Application-Type=silica-qt5
 Icon=harbour-scoreboard
 Exec=harbour-scoreboard
 Name=Scoreboard
-Name[fi]=Pistetaulu
+Name[fi]=Tulostaulu

@@ -49,12 +49,6 @@ ApplicationWindow
         property bool score: true
     }
 
-    function resetScores(){
-        remorse.execute(qsTr("Resetting scores"), function() {scores.home = 0; scores.visitor = 0}, 3000)
-    }
-    function resetRounds(){
-        remorse.execute(qsTr("Resetting rounds"), function() {rounds.home = 0; rounds.visitor = 0}, 3000)
-    }
     function storeScores() {
                 var db = LocalStorage.openDatabaseSync("ScoreDB", "1.0", "Score storage", 100);
 
@@ -147,8 +141,6 @@ ApplicationWindow
                     }
                 )
     }
-
-    RemorsePopup {id: remorse}
 
     Component {
         id: scoreSetPage
@@ -249,6 +241,19 @@ ApplicationWindow
 
     initialPage: Component {
         Page {
+
+            // I moved these here so I can anchor the remorse popup
+            RemorsePopup {
+                id: remorse
+                anchors.top: page.top
+            }
+            function resetScores(){
+                remorse.execute(qsTr("Resetting scores"), function() {scores.home = 0; scores.visitor = 0}, 3000)
+            }
+            function resetRounds(){
+                remorse.execute(qsTr("Resetting rounds"), function() {rounds.home = 0; rounds.visitor = 0}, 3000)
+            }
+
             id: page
             allowedOrientations: Orientation.All
             SilicaFlickable {
@@ -336,9 +341,9 @@ ApplicationWindow
                             anchors.topMargin: page.isPortrait ? (Theme.paddingLarge * 2) : (Theme.paddingLarge * 3)
                             anchors.left: parent.left
                             anchors.leftMargin: page.isPortrait ? (Theme.paddingLarge * 5)  : (Theme.paddingLarge * 1.5)
-                            icon.source: "image://theme/icon-m-add"
-                            icon.height: 150
-                            icon.width: 150
+                            icon.source: "image://theme/icon-l-add"
+                            icon.height: 125
+                            icon.width: 125
                             onClicked: ui.score ? (scores.home ++, storeScores()) : (rounds.home ++, storeRounds())
                             enabled: ui.score ? scores.home < 999 : rounds.home < 999
                         }
@@ -348,9 +353,9 @@ ApplicationWindow
                             anchors.topMargin: page.isPortrait ? (Theme.paddingLarge * 2) : (Theme.paddingLarge * 3)
                             anchors.right: parent.right
                             anchors.rightMargin: page.isPortrait ? (Theme.paddingLarge * 5) : (Theme.paddingLarge * 1.5)
-                            icon.source: "image://theme/icon-m-add"
-                            icon.height: 150
-                            icon.width: 150
+                            icon.source: "image://theme/icon-l-add"
+                            icon.height: 125
+                            icon.width: 125
                             onClicked: ui.score ? (scores.visitor ++, storeScores()) : (rounds.visitor ++, storeRounds())
                             enabled: ui.score ? scores.visitor < 999 : rounds.visitor < 999
                         }

@@ -5,5 +5,10 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Aug 29 2015 jollailija <jollailija@gmail.com> 0.1.0-1
+- Anchored remorse popup
+- Switched plus icon from medium to large
+- Finnish localization WIP
+
 * Thu Aug 6 2015 jollailija <jollailija@gmail.com> 0.0.1-1
 - First version

@@ -8,29 +8,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>A simple scoreboard app for Sailfish OS. Made by jollailija. Icon by Moth</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>CoverPage</name>
-    <message>
-        <source>My Cover</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FirstPage</name>
-    <message>
-        <source>Show Page 2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>UI Template</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Hello Sailors</source>
+        <source>A simple scoreboard app for Sailfish OS. Made by jollailija. Icon by Moth.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -56,17 +34,6 @@ PullDownMenu
 * To reset the scores or the won rounds, use the &apos;Reset scores/rounds&apos;-action in the PullDownMenu. This will reset the highlighted value. You have three seconds to cancel it by tapping the remorse notification.
 * Use &apos;Saved scores&apos; in the PullDownMenu to fetch previous scores and rounds from the database. Beware that the saved values will be overwritten after any following changes.
 * To set new values directly, use the &apos;Set scores &amp; rounds’ menu item and fill them in the corresponding text fields.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>SecondPage</name>
-    <message>
-        <source>Nested Page</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Item</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
