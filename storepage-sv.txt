@@ -1,0 +1,23 @@
+Sammandrag:
+En enkel resultattavla som hjälper dig hålla koll på olika sportresultat och spel.
+
+Beskrivning:
+En enkel resultattavla som hjälper dig hålla koll på olika sportresultat och spel.
+
+Funktioner
+-Enkelt användargränsnitt
+-Håll koll på både poäng och vunna rundor
+-Miniatyråtgärder
+-Hjälpsida
+-Stående och liggande orienteringsläge
+-Spara automatiskt
+-Översättningsklar
+-Svensk översättning av eson57
+-Cool ikon av Moth
+
+Planerade funktioner
+-Automatisk räkning av rundor baserat på sport
+-Fler översättningar
+-Surfplattestöd
+
+Den här appen är öppen källkod. Källkoden finns tillgänglig på Github under en BSD-licens. Nya versioner finns tillgängliga på OpenRepos innan de accepterats av kvalitetskontrollen på Store. https://openrepos.net/content/jollailija/scoreboard
