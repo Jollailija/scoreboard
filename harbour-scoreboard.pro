@@ -38,4 +38,5 @@ CONFIG += sailfishapp_i18n
 
 # Disabled, work in progress
 # TRANSLATIONS += translations/harbour-scoreboard-fi.ts
+TRANSLATIONS += translations/harbour-scoreboard-sv.ts
 

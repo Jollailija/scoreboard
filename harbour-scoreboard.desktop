@@ -5,3 +5,4 @@ Icon=harbour-scoreboard
 Exec=harbour-scoreboard
 Name=Scoreboard
 Name[fi]=Tulostaulu
+Name[sv]=Resultattavla

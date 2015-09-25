@@ -5,6 +5,11 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Fri Sep 25 2015 jollailija <jollailija@gmail.com> 0.1.1-1
+- Swedish translation by eson57
+- Built with new SDK
+- Rewrote the help page
+
 * Sat Aug 29 2015 jollailija <jollailija@gmail.com> 0.1.0-1
 - Anchored remorse popup
 - Switched plus icon from medium to large

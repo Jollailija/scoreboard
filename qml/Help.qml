@@ -30,11 +30,8 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 
-//Yes, I copied the code from my Nettiradio's help page. Recycling!
-
 Page {
     id: page
-    property var textAlignment: TextInput.AlignLeft
     allowedOrientations: Orientation.All
     SilicaFlickable {
         anchors.fill: parent
@@ -52,22 +49,27 @@ Page {
             id: header
             title: qsTr("How to use")
         }
-        TextArea {
+        Text {
             id: text
             anchors {
-                top: header.bottom
+                top: parent.top
                 left: parent.left
                 right: parent.right
+                leftMargin: Theme.paddingLarge
+                rightMargin: Theme.paddingLarge
+                topMargin: Theme.paddingLarge
             }
-            readOnly: true
-            text: qsTr("General
-* Tap the “+” and “-“ buttons to change team scores. You can also add points using the cover actions. To change numbers of won rounds, tap first the small round numbers followed by tapping the +/- buttons. Get back to changing team scores by tapping the score numbers. Values are always automatically saved when modified.
+            width: parent.width
+            wrapMode: Text.WordWrap
+            color: Theme.primaryColor
+            textFormat: Text.StyledText
+            text: "<h3>" + qsTr("General") + "</h3>"
+            + qsTr("* Tap the “+” and “-“ buttons to change team scores. You can also add points using the cover actions. To change numbers of won rounds, tap first the small round numbers followed by tapping the +/- buttons. Get back to changing team scores by tapping the score numbers. Values are always automatically saved when modified.")
 
-PullDownMenu
-* To reset the scores or the won rounds, use the 'Reset scores/rounds'-action in the PullDownMenu. This will reset the highlighted value. You have three seconds to cancel it by tapping the remorse notification.
-* Use 'Saved scores' in the PullDownMenu to fetch previous scores and rounds from the database. Beware that the saved values will be overwritten after any following changes.
-* To set new values directly, use the 'Set scores & rounds’ menu item and fill them in the corresponding text fields.")
-            horizontalAlignment: textAlignment
+            +"<br><h3>"+qsTr("PullDownMenu")+"</h3><p>"+
+            qsTr("* To reset the scores or the won rounds, use the 'Reset scores/rounds'-action in the PullDownMenu. This will reset the highlighted value. You have three seconds to cancel it by tapping the remorse notification.")
+            + "<br>" + qsTr("* Use 'Saved scores' in the PullDownMenu to fetch previous scores and rounds from the database. Beware that the saved values will be overwritten after any following changes.")
+            + "<br>" + qsTr("* To set new values directly, use the 'Set scores &amp; rounds' menu item and fill them in the corresponding text fields.")
         }
     }
 }
