@@ -1,0 +1,23 @@
+Summary:
+A simple scoreboard app that helps you keep score of all kinds of sports and games.
+
+Description:
+A simple scoreboard app that helps you keep score of all kinds of sports and games.
+
+Features
+-Simple UI
+-Keep track of both scores and won rounds
+-Cover actions
+-Help page
+-Landscape support
+-Automatic save
+-Ready for translations
+-Swedish translation by eson57
+-Cool icon by Moth
+
+Planned features
+-Automatic round counting based on sport
+-More translations
+-Tablet support
+
+This app is open source. The source code is available at Github under a BSD licence. New versions are available at OpenRepos before being accepted to store by QA. https://openrepos.net/content/jollailija/scoreboard
