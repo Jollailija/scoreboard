@@ -55,113 +55,114 @@
     <name>TTSetScores</name>
     <message>
         <source>Set scores</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange poängställning</translation>
     </message>
     <message>
         <source>Home score</source>
-        <translation type="unfinished"></translation>
+        <translation>Hemmapoäng</translation>
     </message>
     <message>
         <source>Set home score</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange hemmapoäng</translation>
     </message>
     <message>
         <source>Home score set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hemmapoäng klar.</translation>
     </message>
     <message>
         <source>Visitor score</source>
-        <translation type="unfinished"></translation>
+        <translation>Bortapoäng</translation>
     </message>
     <message>
         <source>Set visitor score</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange bortapoäng</translation>
     </message>
     <message>
         <source>Visitor score set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bortapoäng klar.</translation>
     </message>
     <message>
         <source>Home rounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Hemmarundor</translation>
     </message>
     <message>
         <source>Set home rounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange hemmarundor</translation>
     </message>
     <message>
         <source>Home rounds set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hemmarundor klart.</translation>
     </message>
     <message>
         <source>Visitor rounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Bortarundor</translation>
     </message>
     <message>
         <source>Set visitor rounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange bortarundor</translation>
     </message>
     <message>
         <source>Visitor rounds set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bortarundor Klart.</translation>
     </message>
     <message>
         <source>Press enter to save</source>
-        <translation type="unfinished"></translation>
+        <translation>Tryck retur för att spara</translation>
     </message>
 </context>
 <context>
     <name>TTView</name>
     <message>
         <source>Resetting scores</source>
-        <translation type="unfinished">Återställer poängställning</translation>
+        <translation>Återställer poängställning</translation>
     </message>
     <message>
         <source>Resetting rounds</source>
-        <translation type="unfinished">Återställer rundor</translation>
+        <translation>Återställer rundor</translation>
     </message>
     <message>
         <source>Saved scores</source>
-        <translation type="unfinished">Sparade poängställningar</translation>
+        <translation>Sparade poängställningar</translation>
     </message>
     <message>
         <source>Set scores &amp; rounds</source>
-        <translation type="unfinished">Ange poäng &amp; rundor</translation>
+        <translation>Ange poäng &amp; rundor</translation>
     </message>
     <message>
         <source>Reset scores</source>
-        <translation type="unfinished">Återställ poängställning</translation>
+        <translation>Återställ poängställning</translation>
     </message>
     <message>
         <source>Reset rounds</source>
-        <translation type="unfinished">Återställ rundor</translation>
+        <translation>Återställ rundor</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation type="unfinished">Hjälp</translation>
+        <translation>Hjälp</translation>
     </message>
     <message>
         <source>Scoreboard</source>
-        <translation type="unfinished">Resultattavla</translation>
+        <translation>Resultattavla</translation>
     </message>
     <message>
         <source>Swap</source>
-        <translation type="unfinished"></translation>
+        <translation>Växla</translation>
     </message>
     <message>
         <source>About</source>
-        <translation type="unfinished">Om</translation>
+        <translation>Om</translation>
     </message>
 </context>
 <context>
     <name>harbour-scoreboard</name>
     <message>
         <source>Warning!</source>
-        <translation type="unfinished"></translation>
+        <translation>Varning!</translation>
     </message>
     <message>
         <source>Open the app</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna appen</translation>
     </message>
 </context>
 </TS>
+
