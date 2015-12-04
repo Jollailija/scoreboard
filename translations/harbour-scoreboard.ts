@@ -52,29 +52,9 @@
     </message>
 </context>
 <context>
-    <name>harbour-scoreboard</name>
-    <message>
-        <source>Scoreboard</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Resetting scores</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Reset scores</source>
-        <translation type="unfinished"></translation>
-    </message>
+    <name>TTSetScores</name>
     <message>
         <source>Set scores</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Set home score</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Set visitor score</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -82,27 +62,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Visitor score</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Set scores &amp; rounds</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Press enter to save</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Resetting rounds</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Reset rounds</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Help</source>
+        <source>Set home score</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -110,15 +70,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Visitor score</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Set visitor score</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Visitor score set.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Home rounds set.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Visitor rounds set.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -130,6 +90,10 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Home rounds set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Visitor rounds</source>
         <translation type="unfinished"></translation>
     </message>
@@ -138,7 +102,65 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Visitor rounds set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Press enter to save</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TTView</name>
+    <message>
+        <source>Resetting scores</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Resetting rounds</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Saved scores</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Set scores &amp; rounds</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset scores</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset rounds</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Scoreboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Swap</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>harbour-scoreboard</name>
+    <message>
+        <source>Warning!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open the app</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

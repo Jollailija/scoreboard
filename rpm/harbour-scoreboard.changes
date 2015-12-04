@@ -5,6 +5,16 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Fri Dec 4 2015 jollailija <jollailija@gmail.com> 0.2.0-1
+- Development build for testers
+- A ton of refactoring
+- Swap scores
+- Moved UI stuff around
+- Broke translations and stuff
+
+* Fri Sep 25 2015 jollailija <jollailija@gmail.com> 0.1.1-1
+- Finnish translation
+
 * Fri Sep 25 2015 jollailija <jollailija@gmail.com> 0.1.1-1
 - Swedish translation by eson57
 - Built with new SDK

@@ -24,19 +24,25 @@ OTHER_FILES += qml/harbour-scoreboard.qml \
     harbour-scoreboard.png \
     qml/harbour-scoreboard.png \
     qml/Help.qml \
-    qml/About.qml \
     rpm/harbour-scoreboard.changes
 
 # to disable building translations every time, comment out the
 # following CONFIG line
 CONFIG += sailfishapp_i18n
 
-# German translation is enabled as an example. If you aren't
-# planning to localize your app, remember to comment out the
-# following TRANSLATIONS line. And also do not forget to
-# modify the localized app name in the the .desktop file.
+TRANSLATIONS += translations/harbour-scoreboard-fi.ts
 
-# Disabled, work in progress
-# TRANSLATIONS += translations/harbour-scoreboard-fi.ts
+# Thanks, eson57
 TRANSLATIONS += translations/harbour-scoreboard-sv.ts
+
+DISTFILES += \
+    qml/pages/harbour-scoreboard.png \
+    qml/pages/About.qml \
+    qml/pages/Help.qml \
+    qml/pages/MultiplePlayers.qml \
+    qml/pages/TTSetScores.qml \
+    qml/pages/FirstPage.qml \
+    qml/pages/CoverLoader.qml \
+    qml/pages/TTView.qml \
+    qml/pages/warning.html
 
