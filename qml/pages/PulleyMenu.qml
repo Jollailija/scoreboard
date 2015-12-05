@@ -48,6 +48,13 @@ PullDownMenu {
 */
     //TESTING RELATED STUFF ENDS
 
+
+
+    MenuItem {
+        text: qsTr("About")
+        onClicked: pageStack.push(Qt.resolvedUrl("About.qml"))
+    }
+
     MenuItem {
         text: ui.activeView === 1
               ? qsTr("Multiple player view")
@@ -55,11 +62,6 @@ PullDownMenu {
         onClicked: ui.activeView === 1
                    ? (pageStack.replace(Qt.resolvedUrl("MultiplePlayers.qml")), ui.activeView = 2)
                    : (pageStack.replace(Qt.resolvedUrl("TTView.qml")), ui.activeView = 1)
-    }
-
-    MenuItem {
-        text: qsTr("About")
-        onClicked: pageStack.push(Qt.resolvedUrl("About.qml"))
     }
 
     MenuItem {

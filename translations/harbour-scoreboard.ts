@@ -63,15 +63,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>* Please note that scores at the Multiple Player View won&apos;t be kept on exit (yet).</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Two teams view</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>* To add a player, input the player&apos;s name into the textfield and press enter.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Please note that scores at the Multiple Player View won&apos;t be kept on exit (yet).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

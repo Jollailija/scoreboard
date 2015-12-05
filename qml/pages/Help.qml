@@ -76,7 +76,7 @@ Page {
                   qsTr("* To add a player, input the player's name into the textfield and press enter.")
                   + "<br>" + qsTr("* Click on a players name to remove them from the list. There is a 5 second remorse before deletation.")
                   + "<br>" + qsTr("* You can remove all players by using the PushUpMenu at the bottom of the list. There is also a 5 second remorse before deletation.")
-                  + "<br><h4>" + qsTr("* Please note that scores at the Multiple Player View won't be kept on exit (yet).")+ "</h4>"
+                  + "<br><h4>" + qsTr("Please note that scores at the Multiple Player View won't be kept on exit (yet).")+ "</h4>"
         }
     }
 }
