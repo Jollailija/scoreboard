@@ -41,7 +41,7 @@ Page {
         PullDownMenu {
             MenuItem {
                 text: qsTr("About")
-                onClicked: pageStack.push(Qt.resolvedUrl("About.qml"))
+                onClicked: pageStack.replace(Qt.resolvedUrl("About.qml"))
             }
         }
 
@@ -63,13 +63,20 @@ Page {
             wrapMode: Text.WordWrap
             color: Theme.primaryColor
             textFormat: Text.StyledText
-            text: "<h3>" + qsTr("General") + "</h3>"
-            + qsTr("* Tap the “+” and “-“ buttons to change team scores. You can also add points using the cover actions. To change numbers of won rounds, tap first the small round numbers followed by tapping the +/- buttons. Get back to changing team scores by tapping the score numbers. Values are always automatically saved when modified.")
+            text: "<h2>" + qsTr("Two teams view") + "</h2>"
+                  + qsTr("* Tap the “+” and “-“ buttons to change team scores. You can also add points using the cover actions. To change numbers of won rounds, tap first the small round numbers followed by tapping the +/- buttons. Get back to changing team scores by tapping the score numbers. Values are always automatically saved when modified.")
 
-            +"<br><h3>"+qsTr("PullDownMenu")+"</h3><p>"+
-            qsTr("* To reset the scores or the won rounds, use the 'Reset scores/rounds'-action in the PullDownMenu. This will reset the highlighted value. You have three seconds to cancel it by tapping the remorse notification.")
-            + "<br>" + qsTr("* Use 'Saved scores' in the PullDownMenu to fetch previous scores and rounds from the database. Beware that the saved values will be overwritten after any following changes.")
-            + "<br>" + qsTr("* To set new values directly, use the 'Set scores &amp; rounds' menu item and fill them in the corresponding text fields.")
+                  +"<br><h3>"+qsTr("PushUpMenu")+"</h3><p>"+
+                  qsTr("* To reset the scores or the won rounds, use the 'Reset scores/rounds'-action in the PushUpMenu. This will reset the highlighted value. You have three seconds to cancel it by tapping the remorse notification.")
+                  + "<br>" + qsTr("* Use 'Saved scores' in the PushUpMenu to fetch previous scores and rounds from the database. Beware that the saved values will be overwritten after any following changes.")
+                  + "<br>" + qsTr("* To set new values directly, use the 'Set scores &amp; rounds' menu item and fill them in the corresponding text fields.")
+                  + "<br>" + qsTr("* You can swap the scores by selecting 'Swap'.")
+
+                  +"<br><h2>"+qsTr("Multiple player view")+"</h2><p>"+
+                  qsTr("* To add a player, input the player's name into the textfield and press enter.")
+                  + "<br>" + qsTr("* Click on a players name to remove them from the list. There is a 5 second remorse before deletation.")
+                  + "<br>" + qsTr("* You can remove all players by using the PushUpMenu at the bottom of the list. There is also a 5 second remorse before deletation.")
+                  + "<br><h4>" + qsTr("* Please note that scores at the Multiple Player View won't be kept on exit (yet).")+ "</h4>"
         }
     }
 }

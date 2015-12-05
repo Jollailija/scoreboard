@@ -31,9 +31,12 @@ import QtQuick 2.1
 import Sailfish.Silica 1.0
 Page {
     allowedOrientations: Orientation.All
+
     ListModel {id: playerListModel}
     SilicaListView {
+
         PulleyMenu {}
+        RemorsePopup {id: remorsePopUp;anchors.top: parent.top}
 
         clip: true
         anchors {
@@ -49,12 +52,21 @@ Page {
             width: parent.width
             height: add.height
             property int playerScore
+            function showRemorseItem() {
+                var idx = index
+                remorse.execute(delegate, qsTr("Removing player"), function() { playerListModel.remove(idx) } )
+            }
+            RemorseItem {id: remorse}
             Label {
                 text: model.playerName + ": " + playerScore
                 color: Theme.primaryColor
                 font.pixelSize: mainWindow.applicationActive ? Theme.fontSizeMedium : Theme.fontSizeHuge // Thanks Leszek Lesner for this trick
                 anchors.verticalCenter: parent.verticalCenter
                 x: Theme.horizontalPageMargin
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: showRemorseItem()
+                }
 
             }
             IconButton {
@@ -76,8 +88,16 @@ Page {
                 enabled: playerScore > 0
                 onClicked: playerScore --
             }
+
         }
         VerticalScrollDecorator {}
+
+        PushUpMenu {
+            MenuItem {
+                text: qsTr("Remove all players")
+                onClicked: remorsePopUp.execute(qsTr("Removing players"),function(){playerListModel.clear()})
+            }
+        }
 
     }
     TextField {
@@ -85,12 +105,11 @@ Page {
         width: parent.width
         anchors.bottom: parent.bottom
         validator: RegExpValidator { regExp: newPlayer.focus === true
-                                             ? (/^[ a-öA-Ö0-9]{1,20}$/)
-                                             : (/^[ a-öA-Ö0-9]{,20}$/)} // red looks bad :)
+                                             ? (/^[a-öA-Ö0-9]{1,20}$/)
+                                             : (/^[a-öA-Ö0-9]{,20}$/)} // red looks bad :)
         label: qsTr("Player name")
         placeholderText: qsTr("Add a new player")
         focus: true
-        //horizontalAlignment: textAlignment
         EnterKey.onClicked: {
             if (errorHighlight)
                 newPlayer.focus = true

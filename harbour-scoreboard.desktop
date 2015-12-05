@@ -2,7 +2,7 @@
 Type=Application
 X-Nemo-Application-Type=silica-qt5
 Icon=harbour-scoreboard
-Exec=harbour-scoreboard
+Exec=sailfish-qml harbour-scoreboard
 Name=Scoreboard
 Name[fi]=Tulostaulu
 Name[sv]=Resultattavla

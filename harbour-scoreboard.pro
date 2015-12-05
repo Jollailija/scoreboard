@@ -11,22 +11,31 @@
 
 # The name of your application
 TARGET = harbour-scoreboard
-# Thanks, kimmoli!
-#TEMPLATE = aux
+# Thanks, kimmoli! For future reference: https://github.com/kimmoli/test5-app/blob/master/test5.pro
+TEMPLATE = aux
 
-CONFIG += sailfishapp
+#CONFIG += sailfishapp
 
-SOURCES += src/harbour-scoreboard.cpp
+#SOURCES += src/harbour-scoreboard.cpp
 
-OTHER_FILES += qml/harbour-scoreboard.qml \
+qml.files = qml/*.qml \
+    qml/pages/*.qml
+
+qml.path = /usr/share/test5/qml
+
+desktop.files = harbour-scoreboard.desktop
+desktop.path = /usr/share/applications
+
+OTHER_FILES += \
     rpm/harbour-scoreboard.spec \
     rpm/harbour-scoreboard.yaml \
     translations/*.ts \
     harbour-scoreboard.desktop \
     harbour-scoreboard.png \
     qml/harbour-scoreboard.png \
-    qml/Help.qml \
-    rpm/harbour-scoreboard.changes
+    rpm/harbour-scoreboard.changes \
+    qml/pages/harbour-scoreboard.png \
+    qml/harbour-scoreboard.png
 
 # to disable building translations every time, comment out the
 # following CONFIG line
@@ -37,13 +46,7 @@ TRANSLATIONS += translations/harbour-scoreboard-fi.ts
 # Thanks, eson57
 TRANSLATIONS += translations/harbour-scoreboard-sv.ts
 
-DISTFILES += \
-    qml/pages/harbour-scoreboard.png \
-    qml/pages/About.qml \
-    qml/pages/Help.qml \
-    qml/pages/MultiplePlayers.qml \
-    qml/pages/TTSetScores.qml \
-    qml/pages/TTView.qml \
-    qml/pages/PulleyMenu.qml \
-    qml/harbour-scoreboard.png
+appicons.path = /usr/share/icons/hicolor/
+appicons.files = appicons/*
 
+INSTALLS += appicons qml desktop

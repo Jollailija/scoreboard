@@ -27,27 +27,51 @@
         <translation></translation>
     </message>
     <message>
-        <source>General</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>PullDownMenu</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>* To reset the scores or the won rounds, use the &apos;Reset scores/rounds&apos;-action in the PullDownMenu. This will reset the highlighted value. You have three seconds to cancel it by tapping the remorse notification.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>* Use &apos;Saved scores&apos; in the PullDownMenu to fetch previous scores and rounds from the database. Beware that the saved values will be overwritten after any following changes.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>* To set new values directly, use the &apos;Set scores &amp;amp; rounds&apos; menu item and fill them in the corresponding text fields.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>* Tap the “+” and “-“ buttons to change team scores. You can also add points using the cover actions. To change numbers of won rounds, tap first the small round numbers followed by tapping the +/- buttons. Get back to changing team scores by tapping the score numbers. Values are always automatically saved when modified.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PushUpMenu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Multiple player view</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>* To reset the scores or the won rounds, use the &apos;Reset scores/rounds&apos;-action in the PushUpMenu. This will reset the highlighted value. You have three seconds to cancel it by tapping the remorse notification.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>* Use &apos;Saved scores&apos; in the PushUpMenu to fetch previous scores and rounds from the database. Beware that the saved values will be overwritten after any following changes.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>* You can swap the scores by selecting &apos;Swap&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>* Click on a players name to remove them from the list. There is a 5 second remorse before deletation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>* You can remove all players by using the PushUpMenu at the bottom of the list. There is also a 5 second remorse before deletation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>* Please note that scores at the Multiple Player View won&apos;t be kept on exit (yet).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Two teams view</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>* To add a player, input the player&apos;s name into the textfield and press enter.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -63,6 +87,18 @@
     </message>
     <message>
         <source>Player name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remove all players</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing players</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

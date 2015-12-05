@@ -53,7 +53,7 @@ ApplicationWindow
         id: ui
         property bool score: true
         property bool swapped: false
-        property int activeView: 3
+        property int activeView: 1 // 3 for warning
     }
 
     function storeScores() {

@@ -7,6 +7,12 @@
 
 # Todo: polish stuff, repair translation, add icon sizes
 
+* Sat Dec 5 2015 jollailija <jollailija@gmail.com> 0.2.0-3
+- repaired translations
+- finished "Multiple player view"
+- added all icon sizes
+- updated help
+
 * Sat Dec 5 2015 jollailija <jollailija@gmail.com> 0.2.0-2
 - Development build for testers
 - We ain't gonna jump version numbers between releases!
