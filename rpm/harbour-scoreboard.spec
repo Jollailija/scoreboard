@@ -19,9 +19,14 @@ Group:      Qt/Qt
 License:    BSD
 URL:        https://github.com/jollailija/scoreboard/
 Source0:    %{name}-%{version}.tar.bz2
+Source100:  harbour-scoreboard.yaml
 BuildArch: noarch
 Requires:   sailfishsilica-qt5 >= 0.10.9
 Requires: libsailfishapp-launcher
+BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
+BuildRequires:  pkgconfig(Qt5Core)
+BuildRequires:  pkgconfig(Qt5Qml)
+BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  desktop-file-utils
 
 %description
@@ -60,6 +65,7 @@ desktop-file-install --delete-original       \
 
 %files
 %defattr(644,root,root,755)
+%{_bindir}
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/86x86/apps/%{name}.png
