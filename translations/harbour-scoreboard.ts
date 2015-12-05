@@ -8,7 +8,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>A simple scoreboard app for Sailfish OS. Made by jollailija. Icon by Moth.</source>
+        <source>A simple scoreboard app for Sailfish OS. Made by jollailija. Icon by Moth. Thanks to kimmoli for helping me out with the noarch packaging.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
