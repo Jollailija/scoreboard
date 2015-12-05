@@ -18,8 +18,7 @@ TEMPLATE = aux
 
 #SOURCES += src/harbour-scoreboard.cpp
 
-qml.files = qml/*.qml \
-    qml/pages/*.qml
+qml.files = qml/*
 
 qml.path = /usr/share/harbour-scoreboard/qml
 
@@ -27,6 +26,8 @@ desktop.files = harbour-scoreboard.desktop
 desktop.path = /usr/share/applications
 
 OTHER_FILES += \
+    qml/* \
+    qml/pages/* \
     rpm/harbour-scoreboard.spec \
     translations/*.ts \
     harbour-scoreboard.desktop \
