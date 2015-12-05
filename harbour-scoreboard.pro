@@ -27,6 +27,8 @@ desktop.files = harbour-scoreboard.desktop
 desktop.path = /usr/share/applications
 
 OTHER_FILES += \
+    qml/* \
+    qml/pages/* \
     rpm/harbour-scoreboard.spec \
     translations/*.ts \
     harbour-scoreboard.desktop \

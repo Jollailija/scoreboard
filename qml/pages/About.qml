@@ -61,7 +61,7 @@ Page {
                     right: parent.right
                 }
                 readOnly: true
-                text: qsTr("A simple scoreboard app for Sailfish OS. Made by jollailija. Icon by Moth.")
+                text: qsTr("A simple scoreboard app for Sailfish OS. Made by jollailija. Icon by Moth. Thanks to kimmoli for helping me out with the noarch packaging.")
                 font.pixelSize: Theme.fontSizeMedium
                 horizontalAlignment: textAlignment
             }
