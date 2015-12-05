@@ -34,6 +34,7 @@ import "pages"
 
 ApplicationWindow
 {
+    id: mainWindow
     allowedOrientations: Orientation.All
     _defaultPageOrientations: Orientation.All
 
@@ -52,7 +53,7 @@ ApplicationWindow
         id: ui
         property bool score: true
         property bool swapped: false
-        property int activeView: 1
+        property int activeView: 3
     }
 
     function storeScores() {
@@ -148,9 +149,26 @@ ApplicationWindow
                     )
     }
 
-    initialPage: Component { //FirstPage {}
+    initialPage: ui.activeView === 1 // future proof?
+                 ? ttView
+                 : ui.activeView === 2
+                   ? mpView
+                   : warning
+
+    Component {
+        id: ttView
+        TTView {}
+    }
+
+    Component {
+        id: mpView
+        MultiplePlayers {}
+    }
+
+
+    Component {
+        id: warning
         Page {
-            anchors.fill: parent
 
             SilicaFlickable {
                 anchors.fill: parent
@@ -159,7 +177,7 @@ ApplicationWindow
                 PullDownMenu {
                     MenuItem {
                         text: qsTr("Open the app")
-                        onClicked: pageStack.replace(Qt.resolvedUrl("pages/FirstPage.qml"))
+                        onClicked: {pageStack.replace(Qt.resolvedUrl("pages/TTView.qml")); ui.activeView = 1}
                     }
                 }
 
@@ -195,7 +213,63 @@ You can see the changelog by clicking the version number at the about page.
     }
 
 
-    cover: CoverLoader {}
+
+    cover: ui.activeView === 1 // future proof?
+           ? ttCover
+           : undefined
+
+    Component {
+
+        id: ttCover // Cover for two teams mode
+
+        CoverBackground {
+            anchors.fill: parent
+
+            Image {
+                id: logo
+                source: "harbour-scoreboard.png"
+                anchors.horizontalCenter: parent.horizontalCenter
+                y: parent.height * 0.15
+            }
+            Label {
+                id: label
+                y: parent.height * 0.4
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: (rounds.home > 0 | rounds.visitor > 0)
+                      ? (ui.swapped
+                         ? "V " + rounds.visitor + "-" + rounds.home + " H"
+                         : "H " + rounds.home + "-" + rounds.visitor + " V")
+                      : (ui.swapped
+                         ? "V " + "-" + " H"
+                         : "H " + "-" + " W")
+                font.pixelSize: Theme.fontSizeMedium
+            }
+            Label {
+                id: label2
+                y: parent.height * 0.45
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: ui.swapped
+                      ? scores.visitor + "-" + scores.home
+                      : scores.home + "-" + scores.visitor
+                font.pixelSize: (scores.home > 99 | scores.visitor > 99) ? Theme.fontSizeExtraLarge * 1.5 : Theme.fontSizeExtraLarge * 2
+            }
+
+            CoverActionList {
+                id: coverAction
+
+                CoverAction {
+                    iconSource: "image://theme/icon-cover-new"
+                    onTriggered: {scores.home ++; storeScores()}
+                }
+
+                CoverAction {
+                    iconSource: "image://theme/icon-cover-new"
+                    onTriggered: {scores.visitor ++; storeScores()}
+                }
+            }
+        }
+    }
+
 }
 
 

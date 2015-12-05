@@ -11,6 +11,8 @@
 
 # The name of your application
 TARGET = harbour-scoreboard
+# Thanks, kimmoli!
+#TEMPLATE = aux
 
 CONFIG += sailfishapp
 
@@ -41,8 +43,7 @@ DISTFILES += \
     qml/pages/Help.qml \
     qml/pages/MultiplePlayers.qml \
     qml/pages/TTSetScores.qml \
-    qml/pages/FirstPage.qml \
-    qml/pages/CoverLoader.qml \
     qml/pages/TTView.qml \
-    qml/pages/warning.html
+    qml/pages/PulleyMenu.qml \
+    qml/harbour-scoreboard.png
 

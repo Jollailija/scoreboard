@@ -52,6 +52,40 @@
     </message>
 </context>
 <context>
+    <name>MultiplePlayers</name>
+    <message>
+        <source>Scoreboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add a new player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Player name</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PulleyMenu</name>
+    <message>
+        <source>Multiple player view</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Two teams view</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>TTSetScores</name>
     <message>
         <source>Set scores</source>
@@ -137,10 +171,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Help</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Scoreboard</source>
         <translation type="unfinished"></translation>
     </message>
@@ -148,19 +178,15 @@
         <source>Swap</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>About</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>harbour-scoreboard</name>
     <message>
-        <source>Warning!</source>
+        <source>Open the app</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Open the app</source>
+        <source>Warning!</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

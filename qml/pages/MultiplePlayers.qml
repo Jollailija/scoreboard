@@ -29,8 +29,77 @@
 
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-//import QtQuick.LocalStorage 2.0
+Page {
+    allowedOrientations: Orientation.All
+    ListModel {id: playerListModel}
+    SilicaListView {
+        PulleyMenu {}
 
-Item {
-    id: placeholder
+        clip: true
+        anchors {
+            top: parent.top
+            left: parent.left
+            right: parent.right
+            bottom: newPlayer.bottom
+        }
+        model: playerListModel
+        header: PageHeader { title: qsTr("Scoreboard") }
+        delegate: Item {
+            id: delegate
+            width: parent.width
+            height: add.height
+            property int playerScore
+            Label {
+                text: model.playerName + ": " + playerScore
+                color: Theme.primaryColor
+                font.pixelSize: mainWindow.applicationActive ? Theme.fontSizeMedium : Theme.fontSizeHuge // Thanks Leszek Lesner for this trick
+                anchors.verticalCenter: parent.verticalCenter
+                x: Theme.horizontalPageMargin
+
+            }
+            IconButton {
+                id: add
+                anchors {
+                    right: remove.right
+                    rightMargin: Theme.paddingLarge * 3
+                }
+                icon.source: "image://theme/icon-m-add"
+                onClicked: playerScore ++
+            }
+            IconButton {
+                id: remove
+                anchors {
+                    right: delegate.right
+                    rightMargin: Theme.paddingLarge
+                }
+                icon.source: "image://theme/icon-m-remove"
+                enabled: playerScore > 0
+                onClicked: playerScore --
+            }
+        }
+        VerticalScrollDecorator {}
+
+    }
+    TextField {
+        id: newPlayer
+        width: parent.width
+        anchors.bottom: parent.bottom
+        validator: RegExpValidator { regExp: newPlayer.focus === true
+                                             ? (/^[ a-öA-Ö0-9]{1,20}$/)
+                                             : (/^[ a-öA-Ö0-9]{,20}$/)} // red looks bad :)
+        label: qsTr("Player name")
+        placeholderText: qsTr("Add a new player")
+        focus: true
+        //horizontalAlignment: textAlignment
+        EnterKey.onClicked: {
+            if (errorHighlight)
+                newPlayer.focus = true
+            else
+            {playerListModel.append({"playerName": newPlayer.text})
+                text = ""
+                parent.focus = true;
+            }
+        }
+    }
 }
+

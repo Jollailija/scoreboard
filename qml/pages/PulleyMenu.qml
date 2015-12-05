@@ -29,21 +29,41 @@
 
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-//import QtQuick.LocalStorage 2.0
 
-Page {
-    id: page
-    Loader {
-        anchors.fill: parent
+PullDownMenu {
+    //TESTING RELATED STUFF STARTS
 
-        sourceComponent: ui.activeView === 1 // future proof?
-                         ? ttView
-                         : mpView
-
-        Component {
-        id: ttView
-        TTView {}
+    MenuItem {
+        text: "Portrait"
+        onClicked: {
+            allowedOrientations = Orientation.Portrait
         }
+    }
+    MenuItem {
+        text: "Landscape"
+        onClicked: {
+            allowedOrientations = Orientation.Landscape
+        }
+    }
 
+    //TESTING RELATED STUFF ENDS
+
+    MenuItem {
+        text: ui.activeView === 1
+              ? qsTr("Multiple player view")
+              : qsTr("Two teams view")
+        onClicked: ui.activeView === 1
+                   ? (pageStack.replace(Qt.resolvedUrl("MultiplePlayers.qml")), ui.activeView = 2)
+                   : (pageStack.replace(Qt.resolvedUrl("TTView.qml")), ui.activeView = 1)
+    }
+
+    MenuItem {
+        text: qsTr("About")
+        onClicked: pageStack.push(Qt.resolvedUrl("About.qml"))
+    }
+
+    MenuItem {
+        text: qsTr("Help")
+        onClicked: pageStack.push(Qt.resolvedUrl("Help.qml"))
     }
 }
