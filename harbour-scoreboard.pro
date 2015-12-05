@@ -21,13 +21,14 @@ TEMPLATE = aux
 qml.files = qml/*.qml \
     qml/pages/*.qml
 
-qml.path = /usr/share/harbour-scoreboard/qml
+qml.path = /usr/share/test5/qml
 
 desktop.files = harbour-scoreboard.desktop
 desktop.path = /usr/share/applications
 
 OTHER_FILES += \
     rpm/harbour-scoreboard.spec \
+    rpm/harbour-scoreboard.yaml \
     translations/*.ts \
     harbour-scoreboard.desktop \
     harbour-scoreboard.png \
