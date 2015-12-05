@@ -18,8 +18,7 @@ TEMPLATE = aux
 
 #SOURCES += src/harbour-scoreboard.cpp
 
-qml.files = qml/*.qml \
-    qml/pages/*.qml
+qml.files = qml/*
 
 qml.path = /usr/share/harbour-scoreboard/qml
 
