@@ -215,16 +215,4 @@
         <translation>Växla</translation>
     </message>
 </context>
-<context>
-    <name>harbour-scoreboard</name>
-    <message>
-        <source>Open the app</source>
-        <translation>Öppna appen</translation>
-    </message>
-    <message>
-        <source>Warning!</source>
-        <translation>Varning!</translation>
-    </message>
-</context>
 </TS>
-

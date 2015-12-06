@@ -43,12 +43,29 @@ Page {
             anchors.top: ttView.top
         }
 
-        function resetScores(){
-            remorse.execute(qsTr("Resetting scores"), function() {scores.home = 0; scores.visitor = 0}, 3000)
+        PushUpMenu {
+            MenuItem {
+                text: qsTr("Swap")
+                onClicked: ui.swapped
+                           ? ui.swapped = false
+                           : ui.swapped = true
+            }
+            MenuItem {
+                text: ui.score ? qsTr("Reset scores") : qsTr("Reset rounds")
+                onClicked: ui.score
+                           ? (remorse.execute(qsTr("Resetting scores"), function() {scores.home = 0; scores.visitor = 0}, 3000))
+                           : (remorse.execute(qsTr("Resetting rounds"), function() {rounds.home = 0; rounds.visitor = 0}, 3000))
+            }
+            MenuItem {
+                text: qsTr("Saved scores")
+                onClicked: {getScores(); getRounds()}
+            }
+            MenuItem {
+                text: qsTr("Set scores & rounds")
+                onClicked: pageStack.push(Qt.resolvedUrl("TTSetScores.qml"))
+            }
         }
-        function resetRounds(){
-            remorse.execute(qsTr("Resetting rounds"), function() {rounds.home = 0; rounds.visitor = 0}, 3000)
-        }
+
 
         PulleyMenu {}
 
@@ -180,26 +197,6 @@ Page {
         }
         //}
         //}
-        PushUpMenu {
-            MenuItem {
-                text: qsTr("Swap")
-                onClicked: ui.swapped
-                           ? ui.swapped = false
-                           : ui.swapped = true
-            }
-            MenuItem {
-                text: qsTr("Saved scores")
-                onClicked: {getScores(); getRounds()}
-            }
-            MenuItem {
-                text: qsTr("Set scores & rounds")
-                onClicked: pageStack.push(Qt.resolvedUrl("TTSetScores.qml"))
-            }
-            MenuItem {
-                text: ui.score ? qsTr("Reset scores") : qsTr("Reset rounds")
-                onClicked: ui.score ? resetScores() : resetRounds()
-            }
         }
-    }
 
 }

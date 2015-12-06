@@ -215,15 +215,4 @@
         <translation type="unfinished"></translation>
     </message>
 </context>
-<context>
-    <name>harbour-scoreboard</name>
-    <message>
-        <source>Open the app</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Warning!</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
 </TS>

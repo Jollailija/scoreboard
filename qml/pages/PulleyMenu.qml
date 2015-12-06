@@ -32,7 +32,7 @@ import Sailfish.Silica 1.0
 
 PullDownMenu {
     //TESTING RELATED STUFF STARTS
-/*
+
     MenuItem {
         text: "Portrait"
         onClicked: {
@@ -45,7 +45,7 @@ PullDownMenu {
             allowedOrientations = Orientation.Landscape
         }
     }
-*/
+
     //TESTING RELATED STUFF ENDS
 
 

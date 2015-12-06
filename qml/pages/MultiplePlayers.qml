@@ -34,7 +34,7 @@ Page {
 
     ListModel {id: playerListModel}
     SilicaListView {
-
+        id: listView
         PulleyMenu {}
         RemorsePopup {id: remorsePopUp;anchors.top: parent.top}
 
@@ -43,7 +43,7 @@ Page {
             top: parent.top
             left: parent.left
             right: parent.right
-            bottom: newPlayer.bottom
+            bottom: newPlayer.top
         }
         model: playerListModel
         header: PageHeader { title: qsTr("Scoreboard") }
@@ -57,16 +57,22 @@ Page {
                 remorse.execute(delegate, qsTr("Removing player"), function() { playerListModel.remove(idx) } )
             }
             RemorseItem {id: remorse}
+            MouseArea {
+                anchors {
+                    left: delegate.left
+                    top: delegate.top
+                    bottom: delegate.bottom
+                }
+                width: delegate.width * 0.6
+                onClicked: showRemorseItem()
+            }
             Label {
                 text: model.playerName + ": " + playerScore
                 color: Theme.primaryColor
                 font.pixelSize: mainWindow.applicationActive ? Theme.fontSizeMedium : Theme.fontSizeHuge // Thanks Leszek Lesner for this trick
                 anchors.verticalCenter: parent.verticalCenter
                 x: Theme.horizontalPageMargin
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: showRemorseItem()
-                }
+
 
             }
             IconButton {
@@ -100,10 +106,12 @@ Page {
         }
 
     }
+
     TextField {
         id: newPlayer
         width: parent.width
         anchors.bottom: parent.bottom
+        inputMethodHints: Qt.ImhNoPredictiveText
         validator: RegExpValidator { regExp: newPlayer.focus === true
                                              ? (/^[a-öA-Ö0-9]{1,20}$/)
                                              : (/^[a-öA-Ö0-9]{,20}$/)} // red looks bad :)
@@ -120,5 +128,7 @@ Page {
             }
         }
     }
+
+
 }
 

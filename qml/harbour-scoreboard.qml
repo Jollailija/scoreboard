@@ -149,24 +149,76 @@ ApplicationWindow
                     )
     }
 
-    initialPage: ui.activeView === 1 // future proof?
-                 ? ttView
-                 : ui.activeView === 2
-                   ? mpView
-                   : warning
+    initialPage: Component {TTView {}}
+
+    cover: ui.activeView === 1 // future proof?
+           ? ttCover
+           : undefined
 
     Component {
-        id: ttView
-        TTView {}
+
+        id: ttCover // Cover for two teams mode
+
+        CoverBackground {
+            anchors.fill: parent
+
+            Image {
+                id: logo
+                source: "harbour-scoreboard.png"
+                anchors.horizontalCenter: parent.horizontalCenter
+                y: parent.height * 0.15
+            }
+            Label {
+                id: label
+                y: parent.height * 0.4
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: (rounds.home > 0 | rounds.visitor > 0)
+                      ? (ui.swapped
+                         ? "V " + rounds.visitor + "-" + rounds.home + " H"
+                         : "H " + rounds.home + "-" + rounds.visitor + " V")
+                      : (ui.swapped
+                         ? "V " + "-" + " H"
+                         : "H " + "-" + " V")
+                font.pixelSize: Theme.fontSizeMedium
+            }
+            Label {
+                id: label2
+                y: parent.height * 0.45
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: ui.swapped
+                      ? scores.visitor + "-" + scores.home
+                      : scores.home + "-" + scores.visitor
+                font.pixelSize: (scores.home > 99 | scores.visitor > 99) ? Theme.fontSizeExtraLarge * 1.5 : Theme.fontSizeExtraLarge * 2
+            }
+
+            CoverActionList {
+                id: coverAction
+
+                CoverAction {
+                    iconSource: "image://theme/icon-cover-new"
+                    onTriggered: ui.swapped
+                                 ? (scores.visitor >= 999
+                                    ? console.warn("It's over 999!")
+                                    : scores.visitor ++, storeScores())
+                                 : (scores.home >= 999
+                                    ? console.warn("It's over 999!")
+                                    : scores.home ++, storeScores)
+                }
+
+                CoverAction {
+                    iconSource: "image://theme/icon-cover-new"
+                    onTriggered: ui.swapped
+                                 ? (scores.home >= 999
+                                    ? console.warn("It's over 999!")
+                                    : scores.home ++, storeScores())
+                                 : (scores.visitor >= 999
+                                    ? console.warn("It's over 999!")
+                                    : scores.visitor ++, storeScores)
+                }
+            }
+        }
     }
-
-    Component {
-        id: mpView
-        MultiplePlayers {}
-    }
-
-
-    Component {
+    /*Component {
         id: warning
         Page {
 
@@ -210,65 +262,7 @@ You can see the changelog by clicking the version number at the about page.
 
 
         }
-    }
-
-
-
-    cover: ui.activeView === 1 // future proof?
-           ? ttCover
-           : undefined
-
-    Component {
-
-        id: ttCover // Cover for two teams mode
-
-        CoverBackground {
-            anchors.fill: parent
-
-            Image {
-                id: logo
-                source: "harbour-scoreboard.png"
-                anchors.horizontalCenter: parent.horizontalCenter
-                y: parent.height * 0.15
-            }
-            Label {
-                id: label
-                y: parent.height * 0.4
-                anchors.horizontalCenter: parent.horizontalCenter
-                text: (rounds.home > 0 | rounds.visitor > 0)
-                      ? (ui.swapped
-                         ? "V " + rounds.visitor + "-" + rounds.home + " H"
-                         : "H " + rounds.home + "-" + rounds.visitor + " V")
-                      : (ui.swapped
-                         ? "V " + "-" + " H"
-                         : "H " + "-" + " W")
-                font.pixelSize: Theme.fontSizeMedium
-            }
-            Label {
-                id: label2
-                y: parent.height * 0.45
-                anchors.horizontalCenter: parent.horizontalCenter
-                text: ui.swapped
-                      ? scores.visitor + "-" + scores.home
-                      : scores.home + "-" + scores.visitor
-                font.pixelSize: (scores.home > 99 | scores.visitor > 99) ? Theme.fontSizeExtraLarge * 1.5 : Theme.fontSizeExtraLarge * 2
-            }
-
-            CoverActionList {
-                id: coverAction
-
-                CoverAction {
-                    iconSource: "image://theme/icon-cover-new"
-                    onTriggered: {scores.home ++; storeScores()}
-                }
-
-                CoverAction {
-                    iconSource: "image://theme/icon-cover-new"
-                    onTriggered: {scores.visitor ++; storeScores()}
-                }
-            }
-        }
-    }
+    }*/
 
 }
 
