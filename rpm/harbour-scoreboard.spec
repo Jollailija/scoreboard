@@ -14,7 +14,7 @@ Name:       harbour-scoreboard
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Simple scoreboard
 Version:    0.2.0
-Release:    2
+Release:    3
 Group:      Qt/Qt
 License:    BSD
 URL:        https://github.com/jollailija/scoreboard/

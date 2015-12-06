@@ -91,7 +91,7 @@ Page {
                     rightMargin: Theme.paddingLarge
                 }
                 icon.source: "image://theme/icon-m-remove"
-                enabled: playerScore > 0
+                //enabled: playerScore > 0 There might be games with negative scoring, so I let users do that.
                 onClicked: playerScore --
             }
 
@@ -106,7 +106,17 @@ Page {
         }
 
     }
+    /*Rectangle { // The PullDownMenu looks bad. Too bad I didn't find a good enough color for this :(
+        anchors {
+            bottom: parent.bottom
+            left: parent.left
+            right: parent.right
+            top: listView.bottom
+        }
 
+        color: Theme.highlightDimmerColor
+        opacity: 0.5
+    }*/
     TextField {
         id: newPlayer
         width: parent.width

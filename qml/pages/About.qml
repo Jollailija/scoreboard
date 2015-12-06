@@ -30,8 +30,6 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 
-//Yes, I copied the code from my Nettiradio's about page. Recycling!
-
 Page {
     id: page
     property var textAlignment: TextInput.AlignLeft

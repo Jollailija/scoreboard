@@ -5,14 +5,14 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-# Todo: polish stuff, repair and enable translation, fix remorse at TT
-
 * Sat Dec 5 2015 jollailija <jollailija@gmail.com> 0.2.0-3
 - repaired translations
 - finished "Multiple player view"
 - added all icon sizes
 - updated help and translations
 - noarch packaging
+- Tablet support
+- Big screen friendly layout
 
 * Sat Dec 5 2015 jollailija <jollailija@gmail.com> 0.2.0-2
 - Development build for testers

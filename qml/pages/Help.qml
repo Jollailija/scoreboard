@@ -35,8 +35,10 @@ Page {
     allowedOrientations: Orientation.All
     SilicaFlickable {
         anchors.fill: parent
-        contentHeight: header.height + text.height + Theme.paddingLarge
+        contentHeight: header.height + text.height
         contentWidth: parent.width
+
+        VerticalScrollDecorator {}
 
         PullDownMenu {
             MenuItem {
