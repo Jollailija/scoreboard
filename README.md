@@ -6,14 +6,18 @@ Builds available at OpenRepos: https://openrepos.net/content/jollailija/scoreboa
 
 Features  
 -Simple UI  
--Keep track of both scores and won rounds  
--Cover actions 
+-Keep track of both scores and won rounds (Two teams mode)  
+-You can swap the team's scores  
+-Cover actions for two teams mode  
+-Multiple players mode (you can name the players)  
 -Help page  
 -Landscape support  
--Automatic save  
+-Automatic save (Two teams mode only)  
+-Tablet support  
+-Big screen friendly layout  
+-3 languages: English, Swedish (by eson) and Finnish  
 -Cool icon by Moth  
 
 Planned features  
 -Automatic round counting based on sport  
 -Support for many languages  
--Tablet support
