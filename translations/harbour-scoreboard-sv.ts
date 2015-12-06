@@ -8,8 +8,8 @@
         <translation>Om</translation>
     </message>
     <message>
-        <source>A simple scoreboard app for Sailfish OS. Made by jollailija. Icon by Moth.</source>
-        <translation>En enkel resultattavel-app för SailfishOS. Skapad av jollailija. Ikon av Moth. Svensk översättning av eson57.</translation>
+        <source>A simple scoreboard app for Sailfish OS. Made by jollailija. Icon by Moth. Thanks to kimmoli for helping me out with the noarch packaging.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -63,15 +63,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>* Please note that scores at the Multiple Player View won&apos;t be kept on exit (yet).</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Two teams view</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>* To add a player, input the player&apos;s name into the textfield and press enter.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Please note that scores at the Multiple Player View won&apos;t be kept on exit (yet).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
