@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="ru">
 <context>
     <name>About</name>
     <message>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>О программе</translation>
     </message>
     <message>
         <source>A simple scoreboard app for Sailfish OS. Made by jollailija. Icon by Moth. Thanks to kimmoli for helping me out with the noarch packaging.</source>
-        <translation type="unfinished"></translation>
+        <translation>Простое приложение для ведения игрового счета под Sailfish OS. Сделано jollailija. Иконка от Moth. Спасибо kimmoli за помощь с noarch.</translation>
     </message>
 </context>
 <context>
     <name>Help</name>
     <message>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">О программе</translation>
     </message>
     <message>
         <source>How to use</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Как пользоваться</translation>
     </message>
     <message>
         <source></source>
@@ -28,11 +28,11 @@
     </message>
     <message>
         <source>* To set new values directly, use the &apos;Set scores &amp;amp; rounds&apos; menu item and fill them in the corresponding text fields.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Чтобы установить новые значения напрямую, выберите пункт меню "Установка счета" и заполните соответствующие текстовые поля.</translation>
     </message>
     <message>
         <source>* Tap the “+” and “-“ buttons to change team scores. You can also add points using the cover actions. To change numbers of won rounds, tap first the small round numbers followed by tapping the +/- buttons. Get back to changing team scores by tapping the score numbers. Values are always automatically saved when modified.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Нажимайте кнопки “+” и “-“, чтобы изменить счет. Вы также можете добавить очки используя </translation>
     </message>
     <message>
         <source>PushUpMenu</source>
