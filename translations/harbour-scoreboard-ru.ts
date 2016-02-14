@@ -196,23 +196,23 @@
     </message>
     <message>
         <source>Set scores &amp; rounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Усановить счет и раунды</translation>
     </message>
     <message>
         <source>Reset scores</source>
-        <translation type="unfinished"></translation>
+        <translation>Сбросить счет</translation>
     </message>
     <message>
         <source>Reset rounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Сбросить раунды</translation>
     </message>
     <message>
         <source>Scoreboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Игровое табло</translation>
     </message>
     <message>
         <source>Swap</source>
-        <translation type="unfinished"></translation>
+        <translation>Поменять местами</translation>
     </message>
 </context>
 </TS>
