@@ -79,124 +79,124 @@
     <name>MultiplePlayers</name>
     <message>
         <source>Scoreboard</source>
-        <translation type="unfinished">Игровое табло</translation>
+        <translation>Игровое табло</translation>
     </message>
     <message>
         <source>Add a new player</source>
-        <translation type="unfinished">Добавить нового игрока</translation>
+        <translation>Добавить нового игрока</translation>
     </message>
     <message>
         <source>Player name</source>
-        <translation type="unfinished">Имя игрока</translation>
+        <translation>Имя игрока</translation>
     </message>
     <message>
         <source>Removing player</source>
-        <translation type="unfinished">Удаление игрока</translation>
+        <translation>Удаление игрока</translation>
     </message>
     <message>
         <source>Remove all players</source>
-        <translation type="unfinished">Удалить всех</translation>
+        <translation>Удалить всех</translation>
     </message>
     <message>
         <source>Removing players</source>
-        <translation type="unfinished">Удаление всех игроков</translation>
+        <translation>Удаление всех игроков</translation>
     </message>
 </context>
 <context>
     <name>PulleyMenu</name>
     <message>
         <source>Multiple player view</source>
-        <translation type="unfinished">Более двух команд</translation>
+        <translation>Более двух команд</translation>
     </message>
     <message>
         <source>Two teams view</source>
-        <translation type="unfinished">Режим двух команд</translation>
+        <translation>Режим двух команд</translation>
     </message>
     <message>
         <source>About</source>
-        <translation type="unfinished">О программе</translation>
+        <translation>О программе</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation type="unfinished">Помощь</translation>
+        <translation>Помощь</translation>
     </message>
 </context>
 <context>
     <name>TTSetScores</name>
     <message>
         <source>Set scores</source>
-        <translation type="unfinished">Установить счет</translation>
+        <translation>Установить счет</translation>
     </message>
     <message>
         <source>Home score</source>
-        <translation type="unfinished">Счет хозяев</translation>
+        <translation>Счет хозяев</translation>
     </message>
     <message>
         <source>Set home score</source>
-        <translation type="unfinished">Установить счет хозяев</translation>
+        <translation>Установить счет хозяев</translation>
     </message>
     <message>
         <source>Home score set.</source>
-        <translation type="unfinished">Установка счета хозяев</translation>
+        <translation>Установка счета хозяев</translation>
     </message>
     <message>
         <source>Visitor score</source>
-        <translation type="unfinished">Счет гостей</translation>
+        <translation>Счет гостей</translation>
     </message>
     <message>
         <source>Set visitor score</source>
-        <translation type="unfinished">Установить счет гостей</translation>
+        <translation>Установить счет гостей</translation>
     </message>
     <message>
         <source>Visitor score set.</source>
-        <translation type="unfinished">Установка счета гостей</translation>
+        <translation>Установка счета гостей</translation>
     </message>
     <message>
         <source>Home rounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Раунды хозяев</translation>
     </message>
     <message>
         <source>Set home rounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Установить раунды хозяев</translation>
     </message>
     <message>
         <source>Home rounds set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Установка раундов хозяев</translation>
     </message>
     <message>
         <source>Visitor rounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Гостевые раунды</translation>
     </message>
     <message>
         <source>Set visitor rounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Установить гостевые раунды</translation>
     </message>
     <message>
         <source>Visitor rounds set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Установка гостевых раундов</translation>
     </message>
     <message>
         <source>Press enter to save</source>
-        <translation type="unfinished"></translation>
+        <translation>Нажмите ввод для сохранения</translation>
     </message>
 </context>
 <context>
     <name>TTView</name>
     <message>
         <source>Resetting scores</source>
-        <translation type="unfinished"></translation>
+        <translation>Переустановить счет</translation>
     </message>
     <message>
         <source>Resetting rounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Переустановить раунды</translation>
     </message>
     <message>
         <source>Saved scores</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохраненный счет</translation>
     </message>
     <message>
         <source>Set scores &amp; rounds</source>
-        <translation>Усановить счет и раунды</translation>
+        <translation>Установить счет и раунды</translation>
     </message>
     <message>
         <source>Reset scores</source>
