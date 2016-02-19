@@ -32,7 +32,7 @@
     </message>
     <message>
         <source>* Tap the “+” and “-“ buttons to change team scores. You can also add points using the cover actions. To change numbers of won rounds, tap first the small round numbers followed by tapping the +/- buttons. Get back to changing team scores by tapping the score numbers. Values are always automatically saved when modified.</source>
-        <translation type="unfinished">Нажимайте кнопки “+” и “-“, чтобы изменить счет. Вы также можете добавить очки используя </translation>
+        <translation>Нажимайте кнопки “+” и “-“, чтобы изменить счет. Вы также можете добавить очки, используя тачпад. Чтобы изменить количество выигранных раундов нажмите сначала на цифры, означающие их количество, и измените его нажимая на + и -. Измените очки команд, нажав на цифры, обозначающие очки. Все изменения сохраняются автоматически.</translation>
     </message>
     <message>
         <source>PushUpMenu</source>
@@ -40,7 +40,7 @@
     </message>
     <message>
         <source>Multiple player view</source>
-        <translation>Если игроков больше двух</translation>
+        <translation>Более двух игроков</translation>
     </message>
     <message>
         <source>* To reset the scores or the won rounds, use the &apos;Reset scores/rounds&apos;-action in the PushUpMenu. This will reset the highlighted value. You have three seconds to cancel it by tapping the remorse notification.</source>
@@ -60,7 +60,7 @@
     </message>
     <message>
         <source>* You can remove all players by using the PushUpMenu at the bottom of the list. There is also a 5 second remorse before deletation.</source>
-        <translation>Вы можете удалить сразу всех игроков используя самый нижний пункт меню. У вас также есть 5 секунд, чтобы отменить решение.</translation>
+        <translation>Вы можете удалить сразу всех игроков, используя самый нижний пункт меню. У вас также есть 5 секунд, чтобы отменить решение.</translation>
     </message>
     <message>
         <source>Two teams view</source>
@@ -110,7 +110,7 @@
     </message>
     <message>
         <source>Two teams view</source>
-        <translation>Режим двух команд</translation>
+        <translation>Две команды</translation>
     </message>
     <message>
         <source>About</source>
