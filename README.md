@@ -15,7 +15,7 @@ Features
 -Automatic save (Two teams mode only)  
 -Tablet support  
 -Big screen friendly layout  
--4 languages: English, Finnish, Russian (by InnaLisovskaya) and Swedish (by eson)    
+-4 languages: English, Finnish, Russian (by @InnaLisovskaya) and Swedish (by @eson)    
 -Cool icon by Moth  
 
 Planned features  
